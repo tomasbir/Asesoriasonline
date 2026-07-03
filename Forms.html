@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Inscripción a Asesoría Online</title>
+</head>
+
+<body>
+    <h2>Formulario de Alta - Asesoría de Entrenamiento y Nutrición</h2>
+    
+    <form>
+        <input type="text" required name="Nombre" placeholder="Ingrese Nombre" minlength="3" maxlength="15">
+        <input type="text" required name="Apellido" placeholder="Ingrese Apellido" minlength="3" maxlength="15"> <br><br>
+        
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" required name="fecha_nacimiento"><br><br>
+
+        <input type="email" required name="correo" placeholder="ejemplo@correo.com"><br>
+        <input type="password" required placeholder="Cree su Contraseña"><br><br>
+        
+        <label>Personalice el color de su perfil:</label>
+        <input type="color" name="color_perfil"><br><br>
+        
+        <label>¿Cuál es su objetivo principal?</label><br>
+        <input type="radio" name="objetivo" value="perdida_grasa"> Pérdida de grasa<br>
+        <input type="radio" name="objetivo" value="ganancia_musculo"> Ganancia de masa muscular<br>
+        <input type="radio" name="objetivo" value="salud"> Rendimiento y Salud<br><br>
+        
+        <label>Adjuntar foto de estado actual o análisis:</label>
+        <input type="file" name="archivo_estado"><br><br>
+        
+        <textarea rows="10" cols="30" name="comment" placeholder="Cuénteme sobre sus lesiones, alergias alimentarias o experiencia previa..."></textarea><br><br>
+        
+        <input type="checkbox" required name="terminos"> 
+        <label>Acepto los términos y declaro apto médico para entrenar</label><br><br>
+        
+        <input type="submit" value="Enviar Formulario"><br>
+    </form>
+
+    <br>
+    <label>¿Qué tipo de plan prefiere? (Sugerencias):</label>
+    <input list="tipo" name="plan_preferido">
+    <datalist id="tipo">
+        <option value="Plan Gym (Hipertrofia)" />
+        <option value="Plan En Casa (Calistenia/Mancuernas)" />
+        <option value="Plan Híbrido (Fuerza y Running)" />
+    </datalist><br><br>
+
+    <label>Seleccione su tipo de alimentación actual:</label>
+    <select name="Tipo-Dieta">
+        <option value="Omnívora">Omnívora (Como de todo)</option>
+        <option value="Vegetariana">Vegetariana</option>
+        <option value="Vegana">Vegana</option>
+        <option value="Keto">Cetogénica / Keto</option>
+    </select><br>
+
+    <br> 
+    <a href="index.html">Asesorías Online - Tu Cambio Físico y Nutricional</a><br>
+    <a href="Enlaces.html">Sobre Mí & Mis Certificaciones</a><br>
+
+</body>
+</html>
